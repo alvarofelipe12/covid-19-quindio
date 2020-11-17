@@ -8,18 +8,24 @@ import { AppComponent } from './app.component';
 import { ArcgisService } from './providers/arcgis.service';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { HomeComponent } from './pages/home/home.component';
+import { CanvasComponent } from './components/canvas/canvas.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
     declarations: [
         AppComponent,
         ToolbarComponent,
-        HomeComponent
+        HomeComponent,
+        CanvasComponent,
+        FooterComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         BrowserAnimationsModule,
-        HttpClientModule
+        HttpClientModule,
+        FontAwesomeModule
     ],
     providers: [
         ArcgisService
