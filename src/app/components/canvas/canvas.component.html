@@ -1,3 +1,3 @@
-<ng-container *ngIf="data">
+<ng-container *ngIf="data && (data.attributes.A_CASA || data.attributes.A_HOSPITAL || data.attributes.A_HOSPITAL_UCI)">
     <div id="{{data.attributes.NOMBRE_MPIO}}" class="pies"></div>
 </ng-container>

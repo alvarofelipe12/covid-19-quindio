@@ -1,3 +1,6 @@
 <div class="content">
-    <app-canvas *ngFor="let item of infoPerCities" [data]="item"></app-canvas>
+  <ng-container *ngFor="let item of infoPerCities">
+    <app-canvas [data]="item"
+      *ngIf="item.attributes.A_CASA || item.attributes.A_HOSPITAL || item.attributes.A_HOSPITAL_UCI"></app-canvas>
+  </ng-container>
 </div>

@@ -1,3 +1,6 @@
 .content {
-    position: relative;
+  position: relative;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
 }
