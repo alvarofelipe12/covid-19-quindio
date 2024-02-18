@@ -161,7 +161,6 @@
             }
         }
     },
-    "defaultProject": "covid19-quindio",
     "cli": {
         "analytics": false
     }
