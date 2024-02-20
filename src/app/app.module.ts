@@ -11,25 +11,27 @@ import { HomeComponent } from './pages/home/home.component';
 import { CanvasComponent } from './components/canvas/canvas.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FooterComponent } from './components/footer/footer.component';
+import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        ToolbarComponent,
-        HomeComponent,
-        CanvasComponent,
-        FooterComponent
-    ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        HttpClientModule,
-        FontAwesomeModule
-    ],
-    providers: [
-        ArcgisService
-    ],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    ToolbarComponent,
+    HomeComponent,
+    CanvasComponent,
+    FooterComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FontAwesomeModule,
+    CanvasJSAngularChartsModule
+  ],
+  providers: [
+    ArcgisService
+  ],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

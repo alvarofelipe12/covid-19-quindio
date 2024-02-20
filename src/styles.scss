@@ -1,9 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  // background colors
+  --bkg-primary-color: #5b6c7a;
+
+  // Shades palette
+  --primary-color: #133c04;
+  --seconday-color: #39b40b;
+  --tertiary-color: #79f44b;
+  --quaternary-color: #d2fbc3;
+
+  font-family: 'Montserrat', sans-serif;
+  color: var(--quaternary-color);
+
+  h1 {
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.022em;
+  }
+}
+
 .content {
   margin: 82px 0 0 0;
   padding: 0 16px;
 }
 
 body {
-  background: var(--dark);
+  // background: var(--primary-color);
 }

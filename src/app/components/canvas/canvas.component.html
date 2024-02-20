@@ -1,3 +1,4 @@
 <ng-container *ngIf="data && (data.attributes.A_CASA || data.attributes.A_HOSPITAL || data.attributes.A_HOSPITAL_UCI)">
-    <div id="{{data.attributes.NOMBRE_MPIO}}" class="pies"></div>
+  <canvasjs-chart [options]="chartOptions" [styles]="{width: '100%', height:'360px'}"
+    (chartInstance)="getChartInstance($event)"></canvasjs-chart>
 </ng-container>
