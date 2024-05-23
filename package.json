@@ -10,7 +10,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng deploy covid19-quindio --base-href=/"
+    "deploy": "ng deploy --build-target=covid19-quindio:build:production"
   },
   "private": true,
   "dependencies": {
